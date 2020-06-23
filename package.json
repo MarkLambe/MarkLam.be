@@ -1,0 +1,12 @@
+{
+  "name": "my-app",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start-prod": "nuxt start"
+  },
+  "dependencies": {
+    "@nuxtjs/device": "^1.2.7",
+    "nuxt": "^2.13.0"
+  }
+}

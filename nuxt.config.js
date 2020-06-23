@@ -1,0 +1,3 @@
+{
+  modules: ["@nuxtjs/device"];
+}
