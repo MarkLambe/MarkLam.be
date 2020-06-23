@@ -1,3 +1,3 @@
-{
-  modules: ["@nuxtjs/device"];
-}
+export default {
+  modules: ["@nuxtjs/device"],
+};
