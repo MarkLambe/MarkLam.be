@@ -1,14 +1,9 @@
-<template>
-  <div>
-    Header
-    <div v-if="$device.isDesktop">
-      Desktop
-    </div>
-    <div v-else-if="$device.isTablet">
-      Tablet
-    </div>
-    <div v-else>
-      Mobile
+<template functional>
+  <div class="header">
+    <img class="header-image" src="~/assets/Header.png" />
+    <div class="text-area">
+      <div class="main-text">Mark Lambe</div>
+      <div class="sub-text">Software Developer</div>
     </div>
   </div>
 </template>
@@ -18,4 +13,32 @@ export default {
   name: "Header",
 };
 </script>
-<style scoped></style>
+<style scoped>
+.header {
+  width: 100%;
+  color: var(--main-text-color);
+}
+.header-image {
+  width: 100%;
+  height: auto;
+}
+
+.text-area {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-text {
+  font-size: var(--header-font-size);
+}
+.sub-text {
+  font-size: var(--sub-header-font-size);
+  color: var(--light-text-color);
+}
+</style>
