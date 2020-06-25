@@ -6,8 +6,11 @@
     <div class="timeline">
       <Timeline />
     </div>
-    <div class="spacer">
+    <div class="introduction">
       <Introduction />
+    </div>
+    <div class="skillset">
+      <Skillset />
     </div>
   </div>
 </template>
@@ -26,6 +29,14 @@ export default {};
 }
 
 .timeline {
+  padding-bottom: 125px;
+}
+
+.introduction {
+  padding-bottom: 125px;
+}
+
+.skillset {
   padding-bottom: 125px;
 }
 </style>

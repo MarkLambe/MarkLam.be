@@ -7,7 +7,8 @@
   /* Colours */
   --main-text-color: #474747;
   --light-text-color: #737373;
-  --main-background-colour: #fcdbf8;
+  --main-brand-colour: #fcdbf8;
+  --secondary-brand-colour: #83deff;
 
   /*Layout */
   --content-borders: 100px;

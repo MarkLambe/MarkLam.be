@@ -27,7 +27,7 @@
     <div class="background">
       <svg>
         <clipPath id="introClipPath" clipPathUnits="objectBoundingBox">
-          <path d="M0 0.8 L0.8 0.8 L1 1 L1 0 L0.6 0.2 L0 0.2Z" />
+          <path d="M0 0.8 L0.8 0.8 L1 1 L1 0 L0.3 0.3 L0 0.3Z" />
         </clipPath>
       </svg>
     </div>
@@ -76,7 +76,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--main-background-colour);
+  background-color: var(--main-brand-colour);
   z-index: 1;
   clip-path: url(#introClipPath);
 }
