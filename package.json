@@ -6,6 +6,7 @@
     "start-prod": "nuxt start"
   },
   "dependencies": {
+    "@nuxt/components": "^1.0.5",
     "@nuxtjs/device": "^1.2.7",
     "nuxt": "^2.13.0"
   }

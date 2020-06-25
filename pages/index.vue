@@ -13,17 +13,7 @@
 </template>
 
 <script>
-import Header from "~/components/Header";
-import Timeline from "~/components/Timeline";
-import Introduction from "~/components/Introduction";
-
-export default {
-  components: {
-    Header,
-    Timeline,
-    Introduction,
-  },
-};
+export default {};
 </script>
 
 <style scoped>
