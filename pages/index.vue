@@ -12,6 +12,13 @@
     <div class="skillset">
       <Skillset />
     </div>
+    <div class="additional-info">
+      <AdditionalInfo />
+    </div>
+    <div class="cv">
+      <MyCv />
+    </div>
+    <Footer />
   </div>
 </template>
 
@@ -20,10 +27,6 @@ export default {};
 </script>
 
 <style scoped>
-.body {
-  padding-bottom: 300px;
-}
-
 .header {
   padding-bottom: 25px;
 }
@@ -37,6 +40,14 @@ export default {};
 }
 
 .skillset {
+  padding-bottom: 125px;
+}
+
+.additional-info {
+  padding-bottom: 125px;
+}
+
+.cv {
   padding-bottom: 125px;
 }
 </style>
