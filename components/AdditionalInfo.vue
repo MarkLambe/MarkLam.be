@@ -17,10 +17,23 @@
             If you’d like to chat, here’s my email address, it’s an image to
             avoid bots grabbing it.
           </p>
-          <img src="~/assets/M@rkLam.be.png" class="image" />
+          <img src="~/assets/M@rkLam.be.png" class="email-image" />
         </div>
       </div>
-      <img src="~/assets/Sri Lanka.jpeg" class="image" />
+      <div class="image-area">
+        <img
+          v-lazy="
+            'https://marklambe-site-content.s3-eu-west-1.amazonaws.com/Sri+Lanka.jpeg'
+          "
+          class="main-image"
+        />
+        <img
+          v-lazy="
+            'https://marklambe-site-content.s3-eu-west-1.amazonaws.com/Sri_Lanka_Label.png'
+          "
+          class="image-label"
+        />
+      </div>
     </div>
     <div class="background">
       <svg>
@@ -35,34 +48,59 @@
 <script>
 export default {
   name: "AdditionalInfo",
+  data: () => {
+    return {
+      sri_lanka_image_url: "",
+      sri_lanka_label_image: "",
+    };
+  },
 };
 </script>
 <style scoped>
 .introduction {
   position: relative;
   display: grid;
-  padding: 50px var(--content-borders) 300px var(--content-borders);
+  padding: 0 var(--content-borders);
+  height: 1000px;
 }
 
 .content {
+  padding-top: 150px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   z-index: 2;
 }
 
-.image {
+.image-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 35%;
+}
+.main-image {
+  width: 100%;
   height: auto;
   border-radius: 25px;
 }
 
+.image-label {
+  width: 75%;
+  height: auto;
+  z-index: 5;
+}
+
+.email-image {
+  width: 200px;
+  height: auto;
+}
+
 .text-area {
-  width: 35%;
+  width: 50%;
 }
 
 .intro-header {
-  font-size: var(--header-font-size);
+  font-size: var(--h2-font-size);
   padding-bottom: 60px;
 }
 

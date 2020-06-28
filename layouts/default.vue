@@ -14,13 +14,14 @@
   --content-borders: 100px;
 
   /* Font */
-  --header-font-size: 42px;
-  --sub-header-font-size: 28px;
-  --body-font: 16px;
+  --h1-font-size: 54px;
+  --h2-font-size: 42px;
+  --h3-font-size: 28px;
+  --body-font: 20px;
 
   color: var(--main-text-color);
   font-size: var(--body-font);
-  font-family: "Helvetica Neue";
+  font-family: "Roboto";
   font-weight: 400;
 }
 

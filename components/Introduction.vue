@@ -1,7 +1,20 @@
 <template functional>
   <div class="introduction">
     <div class="content">
-      <img src="~/assets/Budapest.jpeg" class="image" />
+      <div class="image-area">
+        <img
+          v-lazy="
+            'https://marklambe-site-content.s3-eu-west-1.amazonaws.com/Budapest.jpeg'
+          "
+          class="main-image"
+        />
+        <img
+          v-lazy="
+            'https://marklambe-site-content.s3-eu-west-1.amazonaws.com/Budapest_Label.png'
+          "
+          class="image-label"
+        />
+      </div>
       <div class="text-area">
         <div class="intro-header">¡Hola! I’m Mark!</div>
         <div class="intro-body">
@@ -43,29 +56,42 @@ export default {
 .introduction {
   position: relative;
   display: grid;
-  padding: 50px var(--content-borders) 300px var(--content-borders);
+  padding: 0px var(--content-borders);
+  height: 1300px;
 }
 
 .content {
+  padding-top: 150px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   z-index: 2;
 }
 
-.image {
+.image-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 35%;
+}
+.main-image {
+  width: 100%;
   height: auto;
   border-radius: 25px;
 }
 
+.image-label {
+  width: 75%;
+  height: auto;
+  z-index: 5;
+}
 .text-area {
-  width: 35%;
+  width: 50%;
 }
 
 .intro-header {
-  font-size: var(--header-font-size);
-  padding-bottom: 60px;
+  font-size: var(--h2-font-size);
+  font-weight: bold;
 }
 
 .intro-body {

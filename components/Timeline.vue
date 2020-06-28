@@ -1,5 +1,7 @@
 <template functional>
-  <img class="timeline-image" src="~/assets/Timeline.png" />
+  <div class="timeline">
+    <img class="timeline-image" src="~/assets/Timeline.jpg" />
+  </div>
 </template>
 
 <script>
@@ -8,8 +10,13 @@ export default {
 };
 </script>
 <style scoped>
+.timeline {
+  display: flex;
+  justify-content: center;
+}
+
 .timeline-image {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 </style>

@@ -1,7 +1,10 @@
 <template>
   <div class="skillset">
     <div class="header">
-      My Technical Skillset
+      <span>
+        My Technical Skillset
+        <img src="~/assets/Skills_Label.png" class="label-image" />
+      </span>
     </div>
     <div class="skills-section skills-one">
       <div class="skill main-skill">
@@ -57,21 +60,30 @@ export default {
 <style scoped>
 .skillset {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 100px 1fr;
   grid-template-rows: 50px 1fr;
   grid-template-areas:
-    "header header"
-    "skills1 skills2";
+    "header header header"
+    "skills1 . skills2";
   padding: 0 var(--content-borders);
 }
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: var(--header-font-size);
+  font-size: var(--h2-font-size);
   grid-area: header;
   padding-bottom: 30px;
+  position: relative;
 }
+
+.label-image {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  top: -175px;
+}
+
 .skills-section {
   display: flex;
   flex-direction: column;
@@ -86,17 +98,16 @@ export default {
 
 .skill {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 150px 1fr;
   grid-template-rows: 50px;
 }
 
 .main-skill {
-  font-size: var(--sub-header-font-size);
+  font-size: var(--h3-font-size);
   padding-top: 30px;
 }
 
 .sub-skill {
-  padding-top: 15px;
 }
 
 .skill-name {

@@ -1,6 +1,6 @@
 <template functional>
   <div class="header">
-    <img class="header-image" src="~/assets/Header.png" />
+    <img class="header-image" src="~/assets/Header.jpg" />
     <div class="text-area">
       <div class="main-text">Mark Lambe</div>
       <div class="sub-text">Software Developer</div>
@@ -35,10 +35,10 @@ export default {
 }
 
 .main-text {
-  font-size: var(--header-font-size);
+  font-size: var(--h1-font-size);
 }
 .sub-text {
-  font-size: var(--sub-header-font-size);
+  font-size: var(--h3-font-size);
   color: var(--light-text-color);
 }
 </style>

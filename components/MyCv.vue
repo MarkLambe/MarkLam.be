@@ -23,7 +23,11 @@
             <span> <i class="fas fa-map-marker-alt"></i> Dublin, Ireland </span>
           </div>
           <div class="picture-section">
-            <img src="~/assets/me.jpg" />
+            <img
+              v-lazy="
+                'https://marklambe-site-content.s3-eu-west-1.amazonaws.com/me.jpg'
+              "
+            />
           </div>
         </div>
         <div class="cv-statement">
@@ -309,7 +313,7 @@ export default {
   width: 100%;
   display: flex;
   justify-content: center;
-  font-size: var(--sub-header-font-size);
+  font-size: var(--h3-font-size);
   padding-bottom: 100px;
 }
 .cv-site-wrapper {
