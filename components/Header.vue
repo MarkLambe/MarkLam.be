@@ -24,6 +24,7 @@ export default {
 }
 
 .text-area {
+  width: 100%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -40,5 +41,18 @@ export default {
 .sub-text {
   font-size: var(--h3-font-size);
   color: var(--light-text-color);
+}
+
+@media only screen and (max-width: 1200px) {
+  .text-area {
+    top: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .text-area {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 </style>

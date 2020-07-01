@@ -28,4 +28,22 @@
 body {
   margin: 0;
 }
+
+@media only screen and (max-width: 1200px) {
+  :root {
+    --h1-font-size: 40px;
+    --h2-font-size: 30px;
+    --h3-font-size: 20px;
+    --body-font: 16px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    --h1-font-size: 28px;
+    --h2-font-size: 24px;
+    --h3-font-size: 18px;
+    --body-font: 14px;
+  }
+}
 </style>

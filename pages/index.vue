@@ -1,24 +1,26 @@
 <template>
   <div class="body">
-    <div class="header">
+    <div class="header-area">
       <Header />
     </div>
-    <div class="timeline">
-      <Timeline />
+    <div v-if="false">
+      <div class="timeline">
+        <Timeline />
+      </div>
+      <div class="introduction">
+        <Introduction />
+      </div>
+      <div class="skillset">
+        <Skillset />
+      </div>
+      <div class="additional-info">
+        <AdditionalInfo />
+      </div>
+      <div class="cv">
+        <MyCv />
+      </div>
+      <Footer />
     </div>
-    <div class="introduction">
-      <Introduction />
-    </div>
-    <div class="skillset">
-      <Skillset />
-    </div>
-    <div class="additional-info">
-      <AdditionalInfo />
-    </div>
-    <div class="cv">
-      <MyCv />
-    </div>
-    <Footer />
   </div>
 </template>
 
@@ -27,7 +29,7 @@ export default {};
 </script>
 
 <style scoped>
-.header {
+.header-area {
   padding-bottom: 25px;
 }
 
