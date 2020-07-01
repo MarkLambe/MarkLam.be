@@ -1,6 +1,11 @@
-<template functional>
+<template>
   <div class="timeline">
-    <img class="timeline-image" src="~/assets/Timeline.jpg" />
+    <img
+      v-if="$device.isDesktop"
+      class="timeline-image"
+      src="~/assets/Timeline.jpg"
+    />
+    <img v-else class="timeline-image" src="~/assets/Timeline_Mobile.jpg" />
   </div>
 </template>
 

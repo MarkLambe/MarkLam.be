@@ -95,6 +95,7 @@ export default {
 }
 
 .intro-body {
+  font-size: var(--body-font);
 }
 
 .background {
@@ -105,5 +106,23 @@ export default {
   background-color: var(--main-brand-colour);
   z-index: 1;
   clip-path: url(#introClipPath);
+}
+
+@media only screen and (max-width: 1200px) {
+  .introduction {
+    height: 1500px;
+  }
+  .content {
+    flex-direction: column-reverse;
+  }
+
+  .image-area {
+    width: 80%;
+  }
+
+  .text-area {
+    width: 100%;
+    padding-bottom: 40px;
+  }
 }
 </style>

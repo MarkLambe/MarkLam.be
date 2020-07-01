@@ -34,7 +34,7 @@ body {
     --h1-font-size: 40px;
     --h2-font-size: 30px;
     --h3-font-size: 20px;
-    --body-font: 16px;
+    --content-borders: 50px;
   }
 }
 
@@ -43,7 +43,7 @@ body {
     --h1-font-size: 28px;
     --h2-font-size: 24px;
     --h3-font-size: 18px;
-    --body-font: 14px;
+    --content-borders: 25px;
   }
 }
 </style>

@@ -116,4 +116,21 @@ export default {
   z-index: 1;
   clip-path: url(#additionalInfoClipPath);
 }
+
+@media only screen and (max-width: 1200px) {
+  .introduction {
+    height: 1500px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .image-area {
+    width: 80%;
+  }
+
+  .text-area {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+}
 </style>

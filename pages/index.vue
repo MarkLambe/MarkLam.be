@@ -3,24 +3,22 @@
     <div class="header-area">
       <Header />
     </div>
-    <div v-if="false">
-      <div class="timeline">
-        <Timeline />
-      </div>
-      <div class="introduction">
-        <Introduction />
-      </div>
-      <div class="skillset">
-        <Skillset />
-      </div>
-      <div class="additional-info">
-        <AdditionalInfo />
-      </div>
-      <div class="cv">
-        <MyCv />
-      </div>
-      <Footer />
+    <div class="timeline">
+      <Timeline />
     </div>
+    <div class="introduction-area">
+      <Introduction />
+    </div>
+    <div class="skillset">
+      <Skillset />
+    </div>
+    <div class="additional-info">
+      <AdditionalInfo />
+    </div>
+    <div class="cv">
+      <MyCv />
+    </div>
+    <Footer />
   </div>
 </template>
 
@@ -37,7 +35,7 @@ export default {};
   padding-bottom: 125px;
 }
 
-.introduction {
+.introduction-area {
   padding-bottom: 125px;
 }
 
@@ -46,10 +44,19 @@ export default {};
 }
 
 .additional-info {
-  padding-bottom: 125px;
+  padding-bottom: 200px;
 }
 
 .cv {
   padding-bottom: 125px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .introduction-area {
+    padding-bottom: 400px;
+  }
+  .additional-info {
+    padding-bottom: 400px;
+  }
 }
 </style>
