@@ -3,6 +3,7 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
+    "generate": "nuxt build --target static && nuxt export",
     "start-prod": "nuxt start"
   },
   "dependencies": {
