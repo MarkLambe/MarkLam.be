@@ -1,29 +1,13 @@
 <template>
   <div class="timeline">
-    <img
-      v-if="displayHorizontalImage"
-      class="timeline-image"
-      src="~/assets/Timeline.jpg"
-    />
-    <img
-      v-if="displayVerticalImage"
-      class="timeline-image"
-      src="~/assets/Timeline_Mobile.jpg"
-    />
+    <img class="timeline-image vertical" src="~/assets/Timeline.jpg" />
+    <img class="timeline-image horizontal" src="~/assets/Timeline_Mobile.jpg" />
   </div>
 </template>
 
 <script>
 export default {
   name: "Timeline",
-  computed: {
-    displayHorizontalImage() {
-      return process.client && window.innerWidth >= 1000;
-    },
-    displayVerticalImage() {
-      return process.client && window.innerWidth < 1000;
-    },
-  },
 };
 </script>
 <style scoped>
@@ -35,5 +19,16 @@ export default {
 .timeline-image {
   width: 80%;
   height: auto;
+}
+
+@media only screen and (max-width: 1001px) {
+  .vertical {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .horizontal {
+    display: none;
+  }
 }
 </style>
