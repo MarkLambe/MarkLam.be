@@ -1,17 +1,29 @@
 <template>
   <div class="timeline">
     <img
-      v-if="$device.isDesktop"
+      v-if="displayHorizontalImage"
       class="timeline-image"
       src="~/assets/Timeline.jpg"
     />
-    <img v-else class="timeline-image" src="~/assets/Timeline_Mobile.jpg" />
+    <img
+      v-if="displayVerticalImage"
+      class="timeline-image"
+      src="~/assets/Timeline_Mobile.jpg"
+    />
   </div>
 </template>
 
 <script>
 export default {
   name: "Timeline",
+  computed: {
+    displayHorizontalImage() {
+      return process.client && window.innerWidth >= 1000;
+    },
+    displayVerticalImage() {
+      return process.client && window.innerWidth < 1000;
+    },
+  },
 };
 </script>
 <style scoped>
