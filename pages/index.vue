@@ -28,7 +28,7 @@ export default {};
 
 <style scoped>
 .header-area {
-  padding-bottom: 25px;
+  padding-bottom: 125px;
 }
 
 .timeline {
@@ -40,7 +40,7 @@ export default {};
 }
 
 .skillset {
-  padding-bottom: 125px;
+  padding: 125px 0;
 }
 
 .additional-info {

@@ -357,14 +357,7 @@ export default {
   --experience-work-height: var(--experience-section-height);
   --experience-personal-work-height: 7.5cm;
   --experience-education-height: 7cm;
-  --experience-other-qual-height: calc(
-    var(--experience-section-height) -
-      (
-        var(--experience-section-padding-top) +
-          var(--experience-personal-work-height) +
-          var(--experience-education-height)
-      )
-  );
+  --experience-other-qual-height: 100%;
   --experience-body-padding-top: 5mm;
   font-family: "Roboto", sans-serif;
   font-size: var(--base-font-size);

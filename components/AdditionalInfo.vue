@@ -128,6 +128,10 @@ export default {
     width: 80%;
   }
 
+  .image-label {
+    width: 30%;
+  }
+
   .text-area {
     width: 100%;
     padding-bottom: 40px;
