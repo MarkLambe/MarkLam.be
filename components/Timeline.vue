@@ -28,12 +28,12 @@ export default {
 .timeline-image {
   width: 80%;
   height: auto;
-  object-fit: cover;
 }
 
 @media only screen and (max-width: 1001px) {
   .vertical {
     display: none;
+    max-height: 1000px;
   }
 }
 @media only screen and (min-width: 1000px) {
