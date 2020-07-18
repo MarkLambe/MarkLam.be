@@ -33,7 +33,6 @@ export default {
 @media only screen and (max-width: 1001px) {
   .vertical {
     display: none;
-    max-height: 1000px;
   }
 }
 @media only screen and (min-width: 1000px) {
