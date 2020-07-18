@@ -15,11 +15,12 @@
 
 <script>
 export default {
-  name: "Timeline"
+  name: "Timeline",
 };
 </script>
 <style scoped>
 .timeline {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
