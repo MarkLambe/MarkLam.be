@@ -38,6 +38,8 @@ export default {
 @media only screen and (min-width: 1000px) {
   .horizontal {
     display: none;
+    width: 80%;
+    height: auto;
   }
 }
 </style>
