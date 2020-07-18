@@ -28,6 +28,7 @@ export default {
 .timeline-image {
   width: 80%;
   height: auto;
+  object-fit: contain;
 }
 
 @media only screen and (max-width: 1001px) {
@@ -38,8 +39,6 @@ export default {
 @media only screen and (min-width: 1000px) {
   .horizontal {
     display: none;
-    width: 80%;
-    height: auto;
   }
 }
 </style>
