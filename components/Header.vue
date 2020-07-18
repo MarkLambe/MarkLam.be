@@ -1,16 +1,20 @@
 <template functional>
   <div class="header">
-    <img class="header-image" src="~/assets/Header.jpg" />
+    <img
+      class="header-image"
+      src="~/assets/Header.jpg"
+      alt="A blurry effect that sits behind the page title"
+    />
     <div class="text-area">
-      <div class="main-text">Mark Lambe</div>
-      <div class="sub-text">Software Developer</div>
+      <h1 class="main-text">Mark Lambe</h1>
+      <h2 class="sub-text">Software Developer</h2>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Header",
+  name: "Header"
 };
 </script>
 <style scoped>
@@ -37,10 +41,12 @@ export default {
 
 .main-text {
   font-size: var(--h1-font-size);
+  margin: 0;
 }
 .sub-text {
   font-size: var(--h3-font-size);
   color: var(--light-text-color);
+  margin: 0;
 }
 
 @media only screen and (max-width: 1200px) {

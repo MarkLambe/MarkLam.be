@@ -1,32 +1,39 @@
 <template>
   <div class="cv">
     <div class="cv-description">
-      Finally, here’s my CV, you can also download it as a PDF by clicking&nbsp;
-      <a href="">here</a>.
+      Finally, here’s my CV, you can also&nbsp;
+      <a
+        href="https://marklambe-site-content.s3-eu-west-1.amazonaws.com/Mark+Lambe+CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >open and download it as a PDF</a>.
     </div>
     <div class="cv-site-wrapper">
       <div class="page">
         <div class="cv-head">
           <div class="name-section">
-            <span>
-              MARK LAMBE
-            </span>
+            <span>MARK LAMBE</span>
           </div>
           <div class="tagline-section">
-            <span>
-              Experienced Software Professional
-            </span>
+            <span>Experienced Software Professional</span>
           </div>
           <div class="contact-section">
-            <span> <i class="far fa-envelope"></i> Mark@MarkLambe.com </span>
-            <span> <i class="fas fa-phone"></i> +353 86 353 6907 </span>
-            <span> <i class="fas fa-map-marker-alt"></i> Dublin, Ireland </span>
+            <span>
+              <i class="far fa-envelope"></i> Mark@MarkLambe.com
+            </span>
+            <span>
+              <i class="fas fa-phone"></i> +353 86 353 6907
+            </span>
+            <span>
+              <i class="fas fa-map-marker-alt"></i> Dublin, Ireland
+            </span>
           </div>
           <div class="picture-section">
             <img
               v-lazy="
                 'https://marklambe-site-content.s3-eu-west-1.amazonaws.com/me.jpg'
               "
+              alt="An image of me"
             />
           </div>
         </div>
@@ -39,20 +46,12 @@
         <div class="cv-experience">
           <div class="cv-experience-column">
             <div class="work-experience">
-              <div class="experience-title">
-                Experience
-              </div>
+              <div class="experience-title">Experience</div>
               <div class="experience-body">
                 <div class="experience-item">
-                  <div class="experience-item-title">
-                    Senior Software Consultant
-                  </div>
-                  <div class="experience-item-sub">
-                    Hostelworld.com, UCD, Lamware, and others.
-                  </div>
-                  <div class="experience-item-date">
-                    07 / 2018 - Present
-                  </div>
+                  <div class="experience-item-title">Senior Software Consultant</div>
+                  <div class="experience-item-sub">Hostelworld.com, UCD, Lamware, and others.</div>
+                  <div class="experience-item-date">07 / 2018 - Present</div>
                   <div class="experience-item-description">
                     <ul>
                       <li>
@@ -64,61 +63,35 @@
                         Serverless.
                       </li>
                     </ul>
-                    <span class="hashtag">
-                      #ProductManager
-                    </span>
-                    <span class="hashtag">
-                      #FrontEndDev
-                    </span>
-                    <span class="hashtag">
-                      #BackEndDev
-                    </span>
+                    <span class="hashtag">#ProductManager</span>
+                    <span class="hashtag">#FrontEndDev</span>
+                    <span class="hashtag">#BackEndDev</span>
                   </div>
                 </div>
                 <div class="experience-item">
-                  <div class="experience-item-title">
-                    Tech Lead and Senior Software Developer
-                  </div>
-                  <div class="experience-item-sub">
-                    Oliver Wyman Labs
-                  </div>
-                  <div class="experience-item-date">
-                    03 / 2018 - 03 / 2019
-                  </div>
+                  <div class="experience-item-title">Tech Lead and Senior Software Developer</div>
+                  <div class="experience-item-sub">Oliver Wyman Labs</div>
+                  <div class="experience-item-date">03 / 2018 - 03 / 2019</div>
                   <div class="experience-item-description">
                     <ul>
                       <li>
                         Three projects, one as technical lead. Product owner,
                         software architecture and development work.
                       </li>
-                      <li>
-                        Javascript (VueJS, Node), MongoDB.
-                      </li>
+                      <li>Javascript (VueJS, Node), MongoDB.</li>
                     </ul>
-                    <span class="hashtag">
-                      #ProductOwner
-                    </span>
-                    <span class="hashtag">
-                      #FrontEndDev
-                    </span>
-                    <span class="hashtag">
-                      #BackEndDev
-                    </span>
-                    <span class="hashtag">
-                      #ScrumMaster
-                    </span>
+                    <span class="hashtag">#ProductOwner</span>
+                    <span class="hashtag">#FrontEndDev</span>
+                    <span class="hashtag">#BackEndDev</span>
+                    <span class="hashtag">#ScrumMaster</span>
                   </div>
                 </div>
                 <div class="experience-item">
-                  <div class="experience-item-title">
-                    Technical Product Manager and Solutions Architect
-                  </div>
-                  <div class="experience-item-sub">
-                    Creme Global
-                  </div>
-                  <div class="experience-item-date">
-                    01 / 2016 – 03 / 2018
-                  </div>
+                  <div
+                    class="experience-item-title"
+                  >Technical Product Manager and Solutions Architect</div>
+                  <div class="experience-item-sub">Creme Global</div>
+                  <div class="experience-item-date">01 / 2016 – 03 / 2018</div>
                   <div class="experience-item-description">
                     <ul>
                       <li>
@@ -128,73 +101,39 @@
                         those solutions.
                       </li>
                     </ul>
-                    <span class="hashtag">
-                      #ProductOwner
-                    </span>
-                    <span class="hashtag">
-                      #ProductManager
-                    </span>
-                    <span class="hashtag">
-                      #SoftwareArchitect
-                    </span>
-                    <span class="hashtag">
-                      #ScrumMaster
-                    </span>
+                    <span class="hashtag">#ProductOwner</span>
+                    <span class="hashtag">#ProductManager</span>
+                    <span class="hashtag">#SoftwareArchitect</span>
+                    <span class="hashtag">#ScrumMaster</span>
                   </div>
                 </div>
                 <div class="experience-item">
-                  <div class="experience-item-title">
-                    Software Developer
-                  </div>
-                  <div class="experience-item-sub">
-                    Creme Global
-                  </div>
-                  <div class="experience-item-date">
-                    12 / 2012 - 01 / 2016
-                  </div>
+                  <div class="experience-item-title">Software Developer</div>
+                  <div class="experience-item-sub">Creme Global</div>
+                  <div class="experience-item-date">12 / 2012 - 01 / 2016</div>
                   <div class="experience-item-description">
                     <ul>
                       <li>
                         Large scientific web apps utilising predictive analytics
                         and data management.
                       </li>
-                      <li>
-                        Javascript, PHP, Python, C++, MySQL.
-                      </li>
+                      <li>Javascript, PHP, Python, C++, MySQL.</li>
                     </ul>
-                    <span class="hashtag">
-                      #FrontEndDev
-                    </span>
-                    <span class="hashtag">
-                      #BackEndDev
-                    </span>
+                    <span class="hashtag">#FrontEndDev</span>
+                    <span class="hashtag">#BackEndDev</span>
                   </div>
                 </div>
                 <div class="experience-item">
-                  <div class="experience-item-title">
-                    Software Developer and Co-Founder
-                  </div>
-                  <div class="experience-item-sub">
-                    NeverMind Games
-                  </div>
-                  <div class="experience-item-date">
-                    10 / 2010 - 10 / 2012
-                  </div>
+                  <div class="experience-item-title">Software Developer and Co-Founder</div>
+                  <div class="experience-item-sub">NeverMind Games</div>
+                  <div class="experience-item-date">10 / 2010 - 10 / 2012</div>
                   <div class="experience-item-description">
                     <ul>
-                      <li>
-                        Mobile games, educational games.
-                      </li>
-                      <li>
-                        C#, C++;
-                      </li>
+                      <li>Mobile games, educational games.</li>
+                      <li>C#, C++;</li>
                     </ul>
-                    <span class="hashtag">
-                      #MobileDev
-                    </span>
-                    <span class="hashtag">
-                      #Founder
-                    </span>
+                    <span class="hashtag">#MobileDev</span>
+                    <span class="hashtag">#Founder</span>
                   </div>
                 </div>
               </div>
@@ -202,17 +141,11 @@
           </div>
           <div class="cv-experience-column">
             <div class="personal-work">
-              <div class="experience-title">
-                Personal Work
-              </div>
+              <div class="experience-title">Personal Work</div>
               <div class="experience-body">
                 <div class="experience-item">
-                  <div class="experience-item-title">
-                    My Motor Books
-                  </div>
-                  <div class="experience-item-sub">
-                    www.MyMotorBooks.com
-                  </div>
+                  <div class="experience-item-title">My Motor Books</div>
+                  <div class="experience-item-sub">www.MyMotorBooks.com</div>
                   <div class="experience-item-description">
                     My MotorBooks is a full-featured stock-keeping and
                     accountancy solution for people working in the Irish and
@@ -222,12 +155,8 @@
                   </div>
                 </div>
                 <div class="experience-item">
-                  <div class="experience-item-title">
-                    Dev C.V.
-                  </div>
-                  <div class="experience-item-sub">
-                    www.DevCV.io
-                  </div>
+                  <div class="experience-item-title">Dev C.V.</div>
+                  <div class="experience-item-sub">www.DevCV.io</div>
                   <div class="experience-item-description">
                     Dev CV is a soon to be released web app that allows users to
                     create graphs describing their career experience. The client
@@ -238,61 +167,39 @@
               </div>
             </div>
             <div class="education">
-              <div class="experience-title">
-                Education
-              </div>
+              <div class="experience-title">Education</div>
               <div class="experience-body">
                 <div class="experience-item">
-                  <div class="experience-item-title">
-                    M. Sc. High Performance Computing
-                  </div>
-                  <div class="experience-item-sub">
-                    Trinity College Dublin
-                  </div>
-                  <div class="experience-item-date">
-                    11 / 2013 - 11/ 2014
-                  </div>
+                  <div class="experience-item-title">M. Sc. High Performance Computing</div>
+                  <div class="experience-item-sub">Trinity College Dublin</div>
+                  <div class="experience-item-date">11 / 2013 - 11/ 2014</div>
                 </div>
                 <div class="experience-item">
-                  <div class="experience-item-title">
-                    H. Dip. Business Management
-                  </div>
-                  <div class="experience-item-sub">
-                    I.T. Carlow
-                  </div>
-                  <div class="experience-item-date">
-                    12 / 2012 - 05 / 2013
-                  </div>
+                  <div class="experience-item-title">H. Dip. Business Management</div>
+                  <div class="experience-item-sub">I.T. Carlow</div>
+                  <div class="experience-item-date">12 / 2012 - 05 / 2013</div>
                 </div>
                 <div class="experience-item">
-                  <div class="experience-item-title">
-                    B. Sc. (Honours) Computer Game Development
-                  </div>
-                  <div class="experience-item-sub">
-                    I.T. Carlow
-                  </div>
-                  <div class="experience-item-date">
-                    09 / 2006 - 05 / 2010
-                  </div>
+                  <div class="experience-item-title">B. Sc. (Honours) Computer Game Development</div>
+                  <div class="experience-item-sub">I.T. Carlow</div>
+                  <div class="experience-item-date">09 / 2006 - 05 / 2010</div>
                 </div>
               </div>
             </div>
             <div class="other-qualifications">
-              <div class="experience-title">
-                Other Qualifications
-              </div>
+              <div class="experience-title">Other Qualifications</div>
               <div class="experience-body">
                 <ul>
-                  <li class="other-qualification-item experience-item-title">
-                    Certified Scrum Master (PSM I Scrum.org)
-                  </li>
+                  <li
+                    class="other-qualification-item experience-item-title"
+                  >Certified Scrum Master (PSM I Scrum.org)</li>
                   <li class="other-qualification-item experience-item-title">
                     Software Product Management Specialisation, Coursera (Four
                     Courses)
                   </li>
-                  <li class="other-qualification-item experience-item-title">
-                    Over ten other software-development focussed online courses
-                  </li>
+                  <li
+                    class="other-qualification-item experience-item-title"
+                  >Over ten other software-development focussed online courses</li>
                 </ul>
               </div>
             </div>
@@ -305,7 +212,7 @@
 
 <script>
 export default {
-  name: "MyCv",
+  name: "MyCv"
 };
 </script>
 <style scoped>
@@ -326,7 +233,7 @@ export default {
   --primary-color: #cc0066;
   --secondary-color: #333;
   --tertiary-color: #555;
-  --hashtag-color: #47abe6;
+  --hashtag-color: #015484;
 
   --A4-page-width: 21cm;
   --A4-page-height: 27.7cm;
@@ -439,7 +346,7 @@ export default {
   grid-area: picture-section;
   padding: var(--header-padding) var(--header-padding);
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .picture-section img {

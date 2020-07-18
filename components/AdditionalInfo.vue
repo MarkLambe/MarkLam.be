@@ -17,7 +17,11 @@
             If you’d like to chat, here’s my email address, it’s an image to
             avoid bots grabbing it.
           </p>
-          <img src="~/assets/M@rkLam.be.png" class="email-image" />
+          <img
+            src="~/assets/M@rkLam.be.png"
+            class="email-image"
+            alt="An image of my email address, which is 'M at-symbol rkLam dot be"
+          />
         </div>
       </div>
       <div class="image-area">
@@ -26,12 +30,14 @@
             'https://marklambe-site-content.s3-eu-west-1.amazonaws.com/Sri+Lanka.jpeg'
           "
           class="main-image"
+          alt="A photo of me on a train in Sri Lanka"
         />
         <img
           v-lazy="
             'https://marklambe-site-content.s3-eu-west-1.amazonaws.com/Sri_Lanka_Label.png'
           "
           class="image-label"
+          alt="An illustrated description of the photo, which says 'Hanging out in Sri Lanka"
         />
       </div>
     </div>
@@ -51,9 +57,9 @@ export default {
   data: () => {
     return {
       sri_lanka_image_url: "",
-      sri_lanka_label_image: "",
+      sri_lanka_label_image: ""
     };
-  },
+  }
 };
 </script>
 <style scoped>
@@ -80,12 +86,13 @@ export default {
 }
 .main-image {
   width: 100%;
+  max-width: 800px;
   height: auto;
   border-radius: 25px;
 }
 
 .image-label {
-  width: 75%;
+  width: 250px;
   height: auto;
   z-index: 5;
 }
@@ -129,7 +136,8 @@ export default {
   }
 
   .image-label {
-    width: 30%;
+    width: 300px;
+    height: auto;
   }
 
   .text-area {

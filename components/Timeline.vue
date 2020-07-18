@@ -1,13 +1,21 @@
 <template>
   <div class="timeline">
-    <img class="timeline-image vertical" src="~/assets/Timeline.jpg" />
-    <img class="timeline-image horizontal" src="~/assets/Timeline_Mobile.jpg" />
+    <img
+      class="timeline-image vertical"
+      src="~/assets/Timeline.jpg"
+      alt="An illustrated timeline of my career."
+    />
+    <img
+      class="timeline-image horizontal"
+      src="~/assets/Timeline_Mobile.jpg"
+      alt="An illustrated timeline of my career."
+    />
   </div>
 </template>
 
 <script>
 export default {
-  name: "Timeline",
+  name: "Timeline"
 };
 </script>
 <style scoped>

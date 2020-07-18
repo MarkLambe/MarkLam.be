@@ -7,12 +7,14 @@
             'https://marklambe-site-content.s3-eu-west-1.amazonaws.com/Budapest.jpeg'
           "
           class="main-image"
+          alt="A photo of Laura and I in Budapest"
         />
         <img
           v-lazy="
             'https://marklambe-site-content.s3-eu-west-1.amazonaws.com/Budapest_Label.png'
           "
           class="image-label"
+          alt="An illustrated description of the photo which says 'Laura and I in Budapest'"
         />
       </div>
       <div class="text-area">
@@ -49,7 +51,7 @@
 
 <script>
 export default {
-  name: "Introduction",
+  name: "Introduction"
 };
 </script>
 <style scoped>
@@ -73,6 +75,7 @@ export default {
   flex-direction: column;
   align-items: center;
   width: 35%;
+  max-width: 600px;
 }
 .main-image {
   width: 100%;

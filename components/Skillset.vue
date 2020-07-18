@@ -3,50 +3,67 @@
     <div class="header">
       <span>
         My Technical Skillset
-        <img src="~/assets/Skills_Label.png" class="label-image" />
+        <img
+          src="~/assets/Skills_Label.png"
+          class="label-image"
+          alt="An illustrated description which says 'Just a rough guide'"
+        />
       </span>
     </div>
     <div class="skills-section skills-one">
       <div class="skill main-skill">
-        <span class="skill-name">Javascript</span><Skillbar :level="8" />
+        <span class="skill-name">Javascript</span>
+        <Skillbar :level="8" />
       </div>
       <div class="skill sub-skill">
-        <span class="skill-name">Node</span><Skillbar :level="7" />
+        <span class="skill-name">Node</span>
+        <Skillbar :level="7" />
       </div>
       <div class="skill sub-skill">
-        <span class="skill-name">VueJS</span><Skillbar :level="9" />
+        <span class="skill-name">VueJS</span>
+        <Skillbar :level="9" />
       </div>
       <div class="skill sub-skill">
-        <span class="skill-name">React</span><Skillbar :level="7" />
+        <span class="skill-name">React</span>
+        <Skillbar :level="7" />
       </div>
       <div class="skill sub-skill">
-        <span class="skill-name">Angular</span><Skillbar :level="6" />
+        <span class="skill-name">Angular</span>
+        <Skillbar :level="6" />
       </div>
       <div class="skill main-skill">
-        <span class="skill-name">CSS</span><Skillbar :level="8" />
+        <span class="skill-name">CSS</span>
+        <Skillbar :level="8" />
       </div>
       <div class="skill main-skill">
-        <span class="skill-name">HTML</span><Skillbar :level="8" />
+        <span class="skill-name">HTML</span>
+        <Skillbar :level="8" />
       </div>
     </div>
     <div class="skills-section skills-two">
       <div class="skill main-skill">
-        <span class="skill-name">Python</span><Skillbar :level="6" />
+        <span class="skill-name">Python</span>
+        <Skillbar :level="6" />
       </div>
       <div class="skill sub-skill">
-        <span class="skill-name">Django</span><Skillbar :level="6" />
+        <span class="skill-name">Django</span>
+        <Skillbar :level="6" />
       </div>
       <div class="skill main-skill">
-        <span class="skill-name">Databases</span><Skillbar :level="7" />
+        <span class="skill-name">Databases</span>
+        <Skillbar :level="7" />
       </div>
       <div class="skill sub-skill">
-        <span class="skill-name">MySQL</span><Skillbar :level="8" />
+        <span class="skill-name">MySQL</span>
+        <Skillbar :level="8" />
       </div>
       <div class="skill sub-skill">
-        <span class="skill-name">Mongo DB</span><Skillbar :level="6" />
+        <span class="skill-name">Mongo DB</span>
+        <Skillbar :level="6" />
       </div>
       <div class="skill main-skill">
-        <span class="skill-name">Unit Testing</span><Skillbar :level="8" />
+        <span class="skill-name">Unit Testing</span>
+        <Skillbar :level="8" />
       </div>
     </div>
   </div>
@@ -54,7 +71,7 @@
 
 <script>
 export default {
-  name: "Skillset",
+  name: "Skillset"
 };
 </script>
 <style scoped>

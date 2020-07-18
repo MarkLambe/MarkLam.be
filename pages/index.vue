@@ -23,7 +23,26 @@
 </template>
 
 <script>
-export default {};
+export default {
+  head() {
+    return {
+      title: "Mark Lambe",
+      htmlAttrs: {
+        lang: "en"
+      },
+      meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        {
+          hid: "description",
+          name: "description",
+          content: "Mark Lambe Software Developer"
+        },
+        { name: "keywords", content: "Mark, Lambe, Software, Developer" }
+      ]
+    };
+  }
+};
 </script>
 
 <style scoped>
@@ -44,7 +63,7 @@ export default {};
 }
 
 .additional-info {
-  padding-bottom: 200px;
+  margin-bottom: 300px;
 }
 
 .cv {
