@@ -20,6 +20,8 @@ export default {
 }
 
 .message {
-  padding-right: var(--content-borders);
+  width: 200px;
+  padding: 0 var(--content-borders);
+  text-align: right;
 }
 </style>

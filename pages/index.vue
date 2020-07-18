@@ -9,7 +9,7 @@
     <div class="introduction-area">
       <Introduction />
     </div>
-    <div class="skillset">
+    <div class="skillset-section">
       <Skillset />
     </div>
     <div class="additional-info">
@@ -28,7 +28,7 @@ export default {
     return {
       title: "Mark Lambe",
       htmlAttrs: {
-        lang: "en"
+        lang: "en",
       },
       meta: [
         { charset: "utf-8" },
@@ -36,12 +36,12 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Mark Lambe Software Developer"
+          content: "Mark Lambe Software Developer",
         },
-        { name: "keywords", content: "Mark, Lambe, Software, Developer" }
-      ]
+        { name: "keywords", content: "Mark, Lambe, Software, Developer" },
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -58,16 +58,16 @@ export default {
   padding-bottom: 125px;
 }
 
-.skillset {
+.skillset-section {
   padding: 125px 0;
 }
 
 .additional-info {
-  margin-bottom: 300px;
+  margin-bottom: 0px;
 }
 
 .cv {
-  padding-bottom: 125px;
+  padding-bottom: 50px;
 }
 
 @media only screen and (max-width: 1200px) {

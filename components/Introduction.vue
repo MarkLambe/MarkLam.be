@@ -51,7 +51,7 @@
 
 <script>
 export default {
-  name: "Introduction"
+  name: "Introduction",
 };
 </script>
 <style scoped>
@@ -113,7 +113,7 @@ export default {
 
 @media only screen and (max-width: 1200px) {
   .introduction {
-    height: 1500px;
+    height: auto;
   }
   .content {
     flex-direction: column-reverse;

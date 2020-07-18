@@ -71,10 +71,10 @@
 
 <script>
 export default {
-  name: "Skillset"
+  name: "Skillset",
 };
 </script>
-<style scoped>
+<style scoped lang="scss">
 .skillset {
   display: grid;
   grid-template-columns: 1fr 100px 1fr;
@@ -117,6 +117,7 @@ export default {
   display: grid;
   grid-template-columns: 150px 1fr;
   grid-template-rows: 50px;
+  width: 100%;
 }
 
 .main-skill {
@@ -125,11 +126,36 @@ export default {
 }
 
 .sub-skill {
+  font-size: var(--body-font);
 }
 
 .skill-name {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .skillset {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px auto auto;
+    grid-template-areas:
+      "header"
+      "skills1"
+      "skills2";
+    padding: 0 var(--content-borders);
+  }
+
+  .main-skill {
+    .skill-name {
+      justify-content: flex-start;
+    }
+  }
+
+  .label-image {
+    top: -225px;
+    left: 45px;
+  }
 }
 </style>

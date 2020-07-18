@@ -1,75 +1,75 @@
-<template functional>
+<template>
   <div class="skillbar">
     <div
       :class="[
         'bar-section',
         'start',
-        { blue: props.level > 0 },
-        { circle: props.level === 0 },
+        { blue: level > 0 },
+        { circle: level === 0 },
       ]"
     />
     <div
       :class="[
         'bar-section',
-        { blue: props.level > 1 },
-        { circle: props.level === 1 },
+        { blue: level > 1 },
+        { circle: level === 1 },
       ]"
     />
     <div
       :class="[
         'bar-section',
-        { blue: props.level > 2 },
-        { circle: props.level === 2 },
+        { blue: level > 2 },
+        { circle: level === 2 },
       ]"
     />
     <div
       :class="[
         'bar-section',
-        { blue: props.level > 3 },
-        { circle: props.level === 3 },
+        { blue: level > 3 },
+        { circle: level === 3 },
       ]"
     />
     <div
       :class="[
         'bar-section',
-        { blue: props.level > 4 },
-        { circle: props.level === 4 },
+        { blue: level > 4 },
+        { circle: level === 4 },
       ]"
     />
     <div
       :class="[
         'bar-section',
-        { blue: props.level > 5 },
-        { circle: props.level === 5 },
+        { blue: level > 5 },
+        { circle: level === 5 },
       ]"
     />
     <div
       :class="[
         'bar-section',
-        { blue: props.level > 6 },
-        { circle: props.level === 6 },
+        { blue: level > 6 },
+        { circle: level === 6 },
       ]"
     />
     <div
       :class="[
         'bar-section',
-        { blue: props.level > 7 },
-        { circle: props.level === 7 },
+        { blue: level > 7 },
+        { circle: level === 7 },
       ]"
     />
     <div
       :class="[
         'bar-section',
-        { blue: props.level > 8 },
-        { circle: props.level === 8 },
+        { blue: level > 8 },
+        { circle: level === 8 },
       ]"
     />
     <div
       :class="[
         'bar-section',
         'end',
-        { blue: props.level > 9 },
-        { circle: props.level === 9 },
+        { blue: level > 9 },
+        { circle: level === 9 },
       ]"
     />
   </div>
@@ -81,9 +81,9 @@ export default {
   props: {
     level: {
       type: Number,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 };
 </script>
 <style scoped>

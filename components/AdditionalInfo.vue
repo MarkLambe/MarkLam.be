@@ -57,9 +57,9 @@ export default {
   data: () => {
     return {
       sri_lanka_image_url: "",
-      sri_lanka_label_image: ""
+      sri_lanka_label_image: "",
     };
-  }
+  },
 };
 </script>
 <style scoped>
@@ -126,7 +126,7 @@ export default {
 
 @media only screen and (max-width: 1200px) {
   .introduction {
-    height: 1500px;
+    height: auto;
   }
   .content {
     flex-direction: column;
