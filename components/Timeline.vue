@@ -28,7 +28,7 @@ export default {
 .timeline-image {
   width: 80%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 1001px) {
