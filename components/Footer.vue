@@ -1,12 +1,15 @@
 <template functional>
   <div class="footer">
-    <span class="message">Website designed and developed by Mark Lambe.</span>
+    <div class="message">
+      <div>Website designed and developed</div>
+      <div>by Mark Lambe.</div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "AdditionalInfo",
+  name: "AdditionalInfo"
 };
 </script>
 <style scoped>
@@ -20,8 +23,17 @@ export default {
 }
 
 .message {
-  width: 200px;
+  width: 600px;
   padding: 0 var(--content-borders);
   text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 800px) {
+  .message {
+    flex-direction: column;
+  }
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="header">
     <img
       class="header-image"
-      src="~/assets/Header.jpg"
+      src="~/assets/Header.png"
       alt="A blurry effect that sits behind the page title"
     />
     <div class="text-area">
@@ -51,7 +51,7 @@ export default {
 
 @media only screen and (max-width: 1200px) {
   .text-area {
-    top: 20px;
+    top: 10px;
   }
 }
 

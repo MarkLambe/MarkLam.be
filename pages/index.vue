@@ -28,7 +28,7 @@ export default {
     return {
       title: "Mark Lambe",
       htmlAttrs: {
-        lang: "en",
+        lang: "en"
       },
       meta: [
         { charset: "utf-8" },
@@ -36,12 +36,12 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Mark Lambe Software Developer",
+          content: "Mark Lambe Software Developer"
         },
-        { name: "keywords", content: "Mark, Lambe, Software, Developer" },
-      ],
+        { name: "keywords", content: "Mark, Lambe, Software, Developer" }
+      ]
     };
-  },
+  }
 };
 </script>
 
@@ -71,11 +71,17 @@ export default {
 }
 
 @media only screen and (max-width: 1200px) {
+  .header-area {
+    padding-bottom: 25px;
+  }
+  .timeline {
+    padding-bottom: 0;
+  }
   .introduction-area {
-    padding-bottom: 400px;
+    padding-bottom: 175px;
   }
   .additional-info {
-    padding-bottom: 400px;
+    padding-bottom: 175px;
   }
 }
 </style>
