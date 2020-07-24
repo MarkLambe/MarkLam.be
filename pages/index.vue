@@ -70,7 +70,7 @@ export default {
   padding-bottom: 50px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
   .header-area {
     padding-bottom: 25px;
   }
