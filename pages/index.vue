@@ -66,6 +66,24 @@ export default {
   margin-bottom: 0px;
 }
 
+@media screen and (min-width: 1750px) {
+  .additional-info {
+    margin-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .additional-info {
+    margin-bottom: 400px;
+  }
+}
+
+@media screen and (min-width: 2750px) {
+  .additional-info {
+    margin-bottom: 600px;
+  }
+}
+
 .cv {
   padding-bottom: 50px;
 }
